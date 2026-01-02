@@ -1,6 +1,13 @@
-body {
-    background-color: rgb(245, 61, 107);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+*                       {
+    box-sizing: border-box
+}
+
+
+
+
+body { 
+     rgba: (245, 61, 107);
+    font-family: Verdana, Geneva, Tahoma, sans-serif 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
     
     
@@ -21,7 +28,7 @@ h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: blanchedalmond;
     width: 200;
-       text-shadow: 4px 4px 8px rgb(29, 2, 2);
+       text-shadow: 4px 4px 8px rgba(29, 2, 2);
   
    
 
@@ -50,7 +57,7 @@ h1{
     
 }
 .real{
-     display flex: 
+     display: flex;
      padding: 20px;
     align-items: center;
 
@@ -87,7 +94,7 @@ h1{
 
 }
 img:hover{
-    transform: scale(1.1);
+    transform: scale (1.1);
 
 }
 .real img {
@@ -96,5 +103,45 @@ img:hover{
 
 }
 
+.container-slider{
+    width: 90%;
+  max-width: 900px;
+  padding-top: 50px;
+
+ 
+
+    margin: auto;
+   
+    box-shadow: 0 0 0 10px #e61515, 0 15px 50 px;
+}
+
+.slider {
+    display: flex;
+    width: 400%;
+    height: 400%;
+    margin-left: -100%;
+}
 
 
+.slider__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+ .slider__btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+     top: 50%;
+    background: rgba(255, 255, 255, 0.7);
+   
+transform: translateY(50%);
+    font-size: 30px;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+}
